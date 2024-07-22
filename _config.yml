@@ -1,2 +1,3 @@
 	name: Kaptinski: Who are you.
 	markdown: kramdown
+	theme: jekyll-theme-minima
