@@ -396,7 +396,6 @@
                   
 
 
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
 <h1 id="_1">量子化された空間と位相</h1>
 <p>物理学者にとって空間は連続であると伝統的に想定されている。量子力学でさえ空間の量子化は考えない。<br />
 だがこの想定を実験的に確認することは明らかに不可能である。<br />
@@ -407,10 +406,10 @@
 \Delta x = \frac{\hbar}{mc}
 </script>
 で定まるならば、運動量演算子<span class="arithmatex">\(\hat{p}\)</span>は位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>と
-\[
-\frac{\hat{p}}{mc} = \tan{\hat{\varphi}},\
+<script type="math/tex; mode=display">
+\frac{\hat{p}}{mc} = \tan{\hat{\varphi}},\\
 \hat{\varphi}=-i\Delta x\frac{\partial}{\partial x},
-\] 
+</script> 
 のように結ばれる。つまり運動量演算子は空間偏微分の非線形関数である。　　<br />
 位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>は位置演算子<span class="arithmatex">\(\hat{x}\)</span>と正準交換関係を満たす:
 <script type="math/tex; mode=display">
@@ -418,11 +417,11 @@
 </script>
 </p>
 <h2 id="_2">導出</h2>
-<p>波動関数\(\psi(x)\)の並進を考えよう
+<p>波動関数<span class="arithmatex">\(\psi(x)\)</span>の並進を考えよう
 <script type="math/tex; mode=display">
 \psi(x) \rightarrow \psi(x+\Delta x). 
 </script>
-まだ変位\(\Delta x\)の値は任意である。テイラー展開の偶数次と奇数次の項を分けて考えれば
+まだ変位<span class="arithmatex">\(\Delta x\)</span>の値は任意である。テイラー展開の偶数次と奇数次の項を分けて考えれば
 <script type="math/tex; mode=display">
 \psi(x+\Delta x)=\sum_{n=0}^{\infty}\frac{\Delta x^n}{n!}\frac{\partial^n}{\partial x^n}\psi(x)\\
 =\left[\cos{\left(-i\Delta x \frac{\partial}{\partial x}\right)}-i\sin{\left(-i\Delta x \frac{\partial}{\partial x}\right)}\right]\psi(x).
@@ -437,8 +436,7 @@
 \psi(x+\Delta x)=[\cos{\hat{\varphi}}-i\sin{\hat{\varphi}}]\psi(x)\\
 =e^{-i\hat{\varphi}}\psi(x).
 </script>
-位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>の指数関数は並進演算子である。
-\[x=1\]</p>
+位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>の指数関数は並進演算子である。</p>
 
 
 
