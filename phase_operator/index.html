@@ -403,14 +403,14 @@
 もし連続な空間という仮定が除かれるなら量子力学はどのように変更されるだろうか。 
 本ページでは次の主張を行う:<br />
 自由粒子にとって空間の最小単位<span class="arithmatex">\(\Delta x\)</span>が
-\[
-\Delta x = \frac{\hbar}{mc}
-\] 
-で定まるならば、運動量演算子<span class="arithmatex">\(\hat{p}\)</span>は位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>と
 <script type="math/tex; mode=display">
-\frac{\hat{p}}{mc} = \tan{\hat{\varphi}},\\
+\Delta x = \frac{\hbar}{mc}
+</script>
+で定まるならば、運動量演算子<span class="arithmatex">\(\hat{p}\)</span>は位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>と
+\[
+\frac{\hat{p}}{mc} = \tan{\hat{\varphi}},\
 \hat{\varphi}=-i\Delta x\frac{\partial}{\partial x},
-</script> 
+\] 
 のように結ばれる。つまり運動量演算子は空間偏微分の非線形関数である。　　<br />
 位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>は位置演算子<span class="arithmatex">\(\hat{x}\)</span>と正準交換関係を満たす:
 <script type="math/tex; mode=display">
@@ -418,11 +418,27 @@
 </script>
 </p>
 <h2 id="_2">導出</h2>
-<p>
-<script type="math/tex; mode=display">E=mc^2</script>
-<script type="math/tex; mode=display"> x=1 </script>
-<span class="arithmatex">\(E=mc^2\)</span>
-インラインで数式を書きます<span class="arithmatex">\(x=1\)</span></p>
+<p>波動関数\(\psi(x)\)の並進を考えよう
+<script type="math/tex; mode=display">
+\psi(x) \rightarrow \psi(x+\Delta x). 
+</script>
+まだ変位\(\Delta x\)の値は任意である。テイラー展開の偶数次と奇数次の項を分けて考えれば
+<script type="math/tex; mode=display">
+\psi(x+\Delta x)=\sum_{n=0}^{\infty}\frac{\Delta x^n}{n!}\frac{\partial^n}{\partial x^n}\psi(x)\\
+=\left[\cos{\left(-i\Delta x \frac{\partial}{\partial x}\right)}-i\sin{\left(-i\Delta x \frac{\partial}{\partial x}\right)}\right]\psi(x).
+</script> 
+演算子の関数はテイラー展開により定義する。<br />
+位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>を
+<script type="math/tex; mode=display">
+\hat{\varphi}=-i\Delta x\frac{\partial}{\partial x}
+</script>
+のように定義し、まとめれば
+<script type="math/tex; mode=display">
+\psi(x+\Delta x)=[\cos{\hat{\varphi}}-i\sin{\hat{\varphi}}]\psi(x)\\
+=e^{-i\hat{\varphi}}\psi(x).
+</script>
+位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>の指数関数は並進演算子である。
+\[x=1\]</p>
 
 
 
