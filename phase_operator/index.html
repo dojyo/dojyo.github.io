@@ -431,6 +431,7 @@ $$<br />
 $$
 \begin{equation}
 \hat{\varphi}=-i\Delta x\frac{\partial}{\partial x} 
+\tag{1}
 \end{equation}
 $$
 のように定義し、まとめれば
@@ -440,8 +441,8 @@ $$
 &amp;=e^{-i\hat{\varphi}}\psi(x).\nonumber
 \end{align}
 $$
-よって位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>の指数関数は並進演算子である。<br />
-量子力学によれば並進演算子は運動量演算子<span class="arithmatex">\(\hat{p}\)</span>の指数関数であった
+位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>の指数関数は並進演算子である。<br />
+量子力学によれば並進演算子は運動量演算子<span class="arithmatex">\(\hat{p}\)</span>の指数関数でもあった
 $$
 e^{-i\hat{\varphi}}=e^{-i\hat{p}\Delta x/\hbar}.
 $$
@@ -449,9 +450,18 @@ $$
 $$
 \begin{equation}
 \hat{\varphi}=\frac{\hat{p}\Delta x}{\hbar}.
+\tag{2}
 \end{equation}
 $$
-式(2)は不自然な表式である。左辺が位相なのに対し、右辺は<span class="arithmatex">\((-\infty,\infty)\)</span>の任意の値をとる。</p>
+式<span class="arithmatex">\((2)\)</span>の左辺が位相を意味するのに対し、右辺は<span class="arithmatex">\((-\infty,\infty)\)</span>の任意の値をとることに注意しよう。<br />
+これは両辺の変域が整合しない不自然な等式に見える。左辺を拡張し変域を揃えた次の関係がより自然である
+$$
+\begin{equation}
+\tan{\hat{\varphi}}=\frac{\hat{p}\Delta x}{\hbar}.\tag{3}
+\end{equation}
+$$
+式<span class="arithmatex">\((3)\)</span>が量子力学から導かれた式<span class="arithmatex">\((2)\)</span>に一致するのは運動量のスケールが十分小さい場合である
+<span class="arithmatex">\(|\varphi|\ll1 \to |p|\ll\hbar/\Delta x\)</span>.  </p>
 
 
 
