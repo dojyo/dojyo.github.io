@@ -20,7 +20,7 @@
     
     
       
-        <title>Phase Operator - Dojyo's Research</title>
+        <title>Phase Operator - 渡辺の物理学ノート</title>
       
     
     
@@ -86,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href=".." title="Dojyo&#39;s Research" class="md-header__button md-logo" aria-label="Dojyo's Research" data-md-component="logo">
+    <a href=".." title="渡辺の物理学ノート" class="md-header__button md-logo" aria-label="渡辺の物理学ノート" data-md-component="logo">
       
   <img src="../img/title.png" alt="logo">
 
@@ -99,7 +99,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Dojyo's Research
+            渡辺の物理学ノート
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -180,12 +180,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Dojyo&#39;s Research" class="md-nav__button md-logo" aria-label="Dojyo's Research" data-md-component="logo">
+    <a href=".." title="渡辺の物理学ノート" class="md-nav__button md-logo" aria-label="渡辺の物理学ノート" data-md-component="logo">
       
   <img src="../img/title.png" alt="logo">
 
     </a>
-    Dojyo's Research
+    渡辺の物理学ノート
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -404,10 +404,12 @@ $$
 \Delta x = \frac{\hbar}{mc}
 $$
 で定まるならば、運動量演算子<span class="arithmatex">\(\hat{p}\)</span>は位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>と
-\begin{eqnarray}
-\frac{\hat{p}}{mc}=\tan{\hat{\varphi}}&amp;\newline
-\hat{\varphi}=-i\Delta x\frac{\partial}{\partial x}&amp;,
-\end{eqnarray}
+$$
+\begin{align}
+&amp;\frac{\hat{p}}{mc}=\tan{\hat{\varphi}}&amp;\nonumber \newline
+&amp;\hat{\varphi}=-i\Delta x\frac{\partial}{\partial x},\nonumber
+\end{align}
+$$
 のように結ばれる。つまり運動量演算子は空間偏微分の非線形関数であり  　　<br />
 位置演算子<span class="arithmatex">\(\hat{x}\)</span>と正準交換関係を満たすのは運動量演算子<span class="arithmatex">\(\hat{p}\)</span>ではなく位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>である:
 $$
@@ -420,23 +422,36 @@ $$
 $$
 テイラー展開の偶数次と奇数次の項を分けて考え、演算子の関数をテイラー展開により定めれば
 $$
-\begin{eqnarray}
-\psi(x+\Delta x)&amp;=&amp;\sum_{n=0}^{\infty}\frac{\Delta x^n}{n!}\frac{\partial^n}{\partial x^n}\psi(x)\newline
-&amp;=&amp;\left[\cos{\left(-i\Delta x \frac{\partial}{\partial x}\right)}-i\sin{\left(-i\Delta x \frac{\partial}{\partial x}\right)}\right]\psi(x).
-\end{eqnarray}
+\begin{align}
+\psi(x+\Delta x)&amp;=\sum_{n=0}^{\infty}\frac{\Delta x^n}{n!}\frac{\partial^n}{\partial x^n}\psi(x)\nonumber \newline
+&amp;=\left[\cos{\left(-i\Delta x \frac{\partial}{\partial x}\right)}-i\sin{\left(-i\Delta x \frac{\partial}{\partial x}\right)}\right]\psi(x).\nonumber 
+\end{align}
 $$<br />
 位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>を
 $$
-\hat{\varphi}=-i\Delta x\frac{\partial}{\partial x}
+\begin{equation}
+\hat{\varphi}=-i\Delta x\frac{\partial}{\partial x} 
+\end{equation}
 $$
 のように定義し、まとめれば
 $$
-\begin{eqnarray}
-\psi(x+\Delta x)&amp;=&amp;[\cos{\hat{\varphi}}-i\sin{\hat{\varphi}}]\psi(x)\newline
-&amp;=&amp;e^{-i\hat{\varphi}}\psi(x).
-\end{eqnarray}
+\begin{align}
+\psi(x+\Delta x)&amp;=[\cos{\hat{\varphi}}-i\sin{\hat{\varphi}}]\psi(x)\nonumber \newline
+&amp;=e^{-i\hat{\varphi}}\psi(x).\nonumber
+\end{align}
 $$
-位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>の指数関数は並進演算子である。</p>
+よって位相演算子<span class="arithmatex">\(\hat{\varphi}\)</span>の指数関数は並進演算子である。<br />
+量子力学によれば並進演算子は運動量演算子<span class="arithmatex">\(\hat{p}\)</span>の指数関数であった
+$$
+e^{-i\hat{\varphi}}=e^{-i\hat{p}\Delta x/\hbar}.
+$$
+よって
+$$
+\begin{equation}
+\hat{\varphi}=\frac{\hat{p}\Delta x}{\hbar}.
+\end{equation}
+$$
+式(2)は不自然な表式である。左辺が位相なのに対し、右辺は<span class="arithmatex">\((-\infty,\infty)\)</span>の任意の値をとる。</p>
 
 
 
